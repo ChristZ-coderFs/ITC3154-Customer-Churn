@@ -1,0 +1,211 @@
+{
+  "majority_baseline_accuracy": 0.7342,
+  "initial": {
+    "stage": "initial",
+    "model_name": "ResidualMLP",
+    "trainable_params": 19649,
+    "lr": 0.001,
+    "batch_size": 64,
+    "threshold": 0.5,
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "test_accuracy_mean": 0.7965666666666666,
+    "test_accuracy_std": 0.004331666346030544,
+    "test_precision_mean": 0.6723666666666667,
+    "test_precision_std": 0.005293706955747869,
+    "test_recall_mean": 0.45786666666666664,
+    "test_recall_std": 0.02144815454376748,
+    "test_f1_mean": 0.5446333333333333,
+    "test_f1_std": 0.016861296905437993,
+    "test_roc_auc_mean": 0.8427000000000001,
+    "test_roc_auc_std": 0.002615339366124409,
+    "train_time_mean_sec": 2.662933333333333,
+    "best_epoch_mean": 5.333333333333333,
+    "total_epochs_mean": 15.333333333333334,
+    "seed_42_confusion_matrix": [
+      [
+        715,
+        61
+      ],
+      [
+        158,
+        123
+      ]
+    ],
+    "per_seed": [
+      {
+        "seed": 42,
+        "best_epoch": 5,
+        "total_epochs_trained": 15,
+        "train_time_sec": 3.3568,
+        "val_loss": 0.41968,
+        "test_accuracy": 0.7928,
+        "test_precision": 0.6685,
+        "test_recall": 0.4377,
+        "test_f1": 0.529,
+        "test_roc_auc": 0.8439,
+        "confusion_matrix": [
+          [
+            715,
+            61
+          ],
+          [
+            158,
+            123
+          ]
+        ]
+      },
+      {
+        "seed": 123,
+        "best_epoch": 7,
+        "total_epochs_trained": 17,
+        "train_time_sec": 2.5414,
+        "val_loss": 0.42183,
+        "test_accuracy": 0.8013,
+        "test_precision": 0.6784,
+        "test_recall": 0.4804,
+        "test_f1": 0.5625,
+        "test_roc_auc": 0.8445,
+        "confusion_matrix": [
+          [
+            712,
+            64
+          ],
+          [
+            146,
+            135
+          ]
+        ]
+      },
+      {
+        "seed": 456,
+        "best_epoch": 4,
+        "total_epochs_trained": 14,
+        "train_time_sec": 2.0906,
+        "val_loss": 0.420861,
+        "test_accuracy": 0.7956,
+        "test_precision": 0.6702,
+        "test_recall": 0.4555,
+        "test_f1": 0.5424,
+        "test_roc_auc": 0.8397,
+        "confusion_matrix": [
+          [
+            713,
+            63
+          ],
+          [
+            153,
+            128
+          ]
+        ]
+      }
+    ]
+  },
+  "tuned": {
+    "stage": "tuned",
+    "model_name": "ResidualMLP",
+    "trainable_params": 19649,
+    "lr": 0.005,
+    "batch_size": 64,
+    "threshold": 0.5,
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "test_accuracy_mean": 0.8004000000000001,
+    "test_accuracy_std": 0.0019000000000000128,
+    "test_precision_mean": 0.6908,
+    "test_precision_std": 0.011864653387267566,
+    "test_recall_mean": 0.4519666666666667,
+    "test_recall_std": 0.02825284646426503,
+    "test_f1_mean": 0.5459,
+    "test_f1_std": 0.01708010538609173,
+    "test_roc_auc_mean": 0.8430333333333332,
+    "test_roc_auc_std": 0.0012013880860626519,
+    "train_time_mean_sec": 2.721366666666667,
+    "best_epoch_mean": 4.333333333333333,
+    "total_epochs_mean": 14.333333333333334,
+    "seed_42_confusion_matrix": [
+      [
+        725,
+        51
+      ],
+      [
+        160,
+        121
+      ]
+    ],
+    "per_seed": [
+      {
+        "seed": 42,
+        "best_epoch": 3,
+        "total_epochs_trained": 13,
+        "train_time_sec": 3.4225,
+        "val_loss": 0.417587,
+        "test_accuracy": 0.8004,
+        "test_precision": 0.7035,
+        "test_recall": 0.4306,
+        "test_f1": 0.5342,
+        "test_roc_auc": 0.8418,
+        "confusion_matrix": [
+          [
+            725,
+            51
+          ],
+          [
+            160,
+            121
+          ]
+        ]
+      },
+      {
+        "seed": 123,
+        "best_epoch": 7,
+        "total_epochs_trained": 17,
+        "train_time_sec": 2.7222,
+        "val_loss": 0.418561,
+        "test_accuracy": 0.7985,
+        "test_precision": 0.6889,
+        "test_recall": 0.4413,
+        "test_f1": 0.538,
+        "test_roc_auc": 0.8442,
+        "confusion_matrix": [
+          [
+            720,
+            56
+          ],
+          [
+            157,
+            124
+          ]
+        ]
+      },
+      {
+        "seed": 456,
+        "best_epoch": 3,
+        "total_epochs_trained": 13,
+        "train_time_sec": 2.0194,
+        "val_loss": 0.418348,
+        "test_accuracy": 0.8023,
+        "test_precision": 0.68,
+        "test_recall": 0.484,
+        "test_f1": 0.5655,
+        "test_roc_auc": 0.8431,
+        "confusion_matrix": [
+          [
+            712,
+            64
+          ],
+          [
+            145,
+            136
+          ]
+        ]
+      }
+    ]
+  }
+}
